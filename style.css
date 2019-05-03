@@ -1,23 +1,23 @@
 /* include padding and border in element's dimensions */
 *{
   box-sizing: border-box;
+  font-family: 'Gugi', cursive;
 }
 
 /* Remove margins and padding from item List */
 ul {
   margin:0;
-  padding: 0
+  padding: 0;
 }
 
 /* List styling */
 ul li {
   cursor: pointer;
-  postion: relative;
+  position: relative;
   padding:  12px 8px 12px 40px;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-
 /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -43,8 +43,8 @@ ul li.checked {
 }
 
 /* Add check mark on click */
-ul li.checked:before {
-  content: "";
+ul li.checked::before {
+  content: '';
   position: absolute;
   border-color: #fff;
   border-style: solid;
@@ -71,7 +71,7 @@ ul li.checked:before {
 
 /* Header styling */
 .header {
-  background-color: #ff4436;
+  background-color: black;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -92,4 +92,28 @@ input {
   padding: 10px;
   float: left;
   font-size: 16px;
+  background-color: yellow;
+  color: black;
+}
+
+/* Button styling */
+.addBtn {
+  padding: 9px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+#myInput {
+  color: black;
 }

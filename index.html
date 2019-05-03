@@ -5,24 +5,36 @@
     <meta charset="utf-8">
     <title>To Do List (html, css, js)</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <script src="https://unpkg.com/@material-ui/core/umd/material-ui.production.min.js" crossorigin="anonymous"></script>
+    /bootstrap CDNs
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
-    <div id=myDIV class="header">
+<div class="container">
+    <div id="myDIV" class="header">
       <h2>To Do List (vanilla)</h2>
-
 <!-- add input field -->
-      <input type="text" id="myInput" placeholder="task...">
+      <input type="text" id="myInput" placeholder="Task...">
       <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-
+</div>
 <!-- //add item list -->
-    <ul id="myList">
-      <li class="unchecked">budget</li>
+<div class="container">
+    <ul id="myUL">
+      <li>budget</li>
       <li class="checked">run</li>
       <li>groceries</li>
       <li>bills</li>
     </ul>
-
+</div>
   </body>
 </html>
