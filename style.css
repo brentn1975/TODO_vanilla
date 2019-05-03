@@ -1,0 +1,10 @@
+/* include padding and border in element's dimensions */
+*{
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from item List */
+ul {
+  margin:0;
+  padding: 0
+}
