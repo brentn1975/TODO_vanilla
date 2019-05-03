@@ -43,8 +43,8 @@ ul li.checked {
 }
 
 /* Add check mark on click */
-ul li.checked::before {
-  content: '';
+ul li.checked:before {
+  content: "";
   position: absolute;
   border-color: #fff;
   border-style: solid;
@@ -65,8 +65,21 @@ ul li.checked::before {
 }
 
 .close:hover {
-  backgroud-color: #f44336;
+  background-color: #f44336;
+  color: white;
+}
+
+/* Header styling */
+.header {
+  background-color: #ff4436;
   padding: 30px 40px;
   color: white;
   text-align: center;
+}
+
+/* Clear floats after header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
